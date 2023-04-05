@@ -2793,12 +2793,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 1313711683}
-  m_MoveSpeed: 5
+  m_MoveSpeed: 1.35
   m_EnableStrafe: 0
   m_EnableFly: 0
   m_UseGravity: 0
   m_GravityApplicationMode: 0
-  m_ForwardSource: {fileID: 0}
+  m_ForwardSource: {fileID: 892066291}
 --- !u!1 &1367943931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2905,6 +2905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1586837224}
+  - component: {fileID: 1586837226}
   - component: {fileID: 1586837225}
   m_Layer: 0
   m_Name: Pin
@@ -2985,6 +2986,19 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!135 &1586837226
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586837223}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.05
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1729082636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3222,11 +3236,6 @@ PrefabInstance:
       propertyPath: m_System
       value: 
       objectReference: {fileID: 1313711683}
-    - target: {fileID: 2251415192929964596, guid: d7e6afa99f5d2894cb4e8edee5f80351,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5530274451791067273, guid: d7e6afa99f5d2894cb4e8edee5f80351,
         type: 3}
       propertyPath: _moveProvider
@@ -3292,5 +3301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paddle
       objectReference: {fileID: 0}
+    - target: {fileID: 7393537297271542407, guid: d7e6afa99f5d2894cb4e8edee5f80351,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 139200558}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7e6afa99f5d2894cb4e8edee5f80351, type: 3}
